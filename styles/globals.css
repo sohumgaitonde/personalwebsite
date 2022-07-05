@@ -3,3 +3,79 @@ body {
     margin: 0;
     font-family: "Inter", sans-serif;
 }
+#container{
+    width:700px;
+    margin:0 auto;
+}
+#prof-pic{
+    width:200px;
+    height:200px;
+    border-radius:100px;
+}
+#top-section{
+    text-align: center;
+    margin: 48px 0;
+}
+h1{
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 72px;
+}
+hr{
+    margin:32px 0;
+}
+
+.project-box{
+    border: 1px solid#bbb;
+    padding: 48px;
+    border-radius: 16px;
+}
+.project-box img{
+    width: 100%;
+}
+.project-box h2{
+    font-size: 32px;
+    margin-bottom: 12s;
+}
+.project-box p{
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 0;
+    margin-top: 12;
+}
+.project-wrapper{
+    color: unset;
+    text-decoration: none;
+}
+#navbar{
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color:  white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+  .typewriter{
+    position: relative;
+      top: 50%;  
+      width: 24em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255,255,255,.75);
+      font-size: 250%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 7em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(12, 9, 9, 0.75);}
+    to{border-left-color: transparent;}
+  }
