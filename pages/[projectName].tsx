@@ -1,3 +1,5 @@
+import projects from "../data/projects"
+
 export async function getServerSideProps(context: any){
     const projectName = context.params.projectName;
     const project = projects.find(d => d.projectName 
@@ -13,7 +15,7 @@ export async function getServerSideProps(context: any){
         }
     }
 }
-export default function ProjectPage(prop: {
+export default function ProjectPage(props: {
     title: string,
     description: string,
     link: string,
